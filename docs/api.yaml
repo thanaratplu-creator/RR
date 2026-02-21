@@ -1,0 +1,29 @@
+openapi: 3.0.3
+info:
+  title: HR Platform API
+  version: 1.0.0
+paths:
+  /health:
+    get:
+      responses:
+        '200':
+          description: Healthy
+  /v1/modules:
+    get:
+      responses:
+        '200':
+          description: Module catalog
+  /v1/attendance/check-in:
+    post:
+      requestBody:
+        required: true
+      responses:
+        '201':
+          description: Check-in stored
+  /v1/payroll/calculate:
+    post:
+      requestBody:
+        required: true
+      responses:
+        '201':
+          description: Payroll summary
